@@ -1,0 +1,11 @@
+--- FusionDale-0.8.2/configure.in.orig	2010-12-16 16:32:00.000000000 +0100
++++ FusionDale-0.8.2/configure.in	2011-01-06 20:15:20.137904881 +0100
+@@ -169,7 +169,7 @@
+ 
+ AC_MSG_CHECKING(for Fusion)
+ if $PKG_CONFIG --atleast-version $FUSION_REQUIRED_VERSION fusion ; then
+-  MODULEDIR=$libdir/`$PKG_CONFIG --variable=moduledirname fusion`
++  MODULEDIR=$libdir/`$PKG_CONFIG --variable=moduledirname direct`
+   FUSION_CFLAGS=`$PKG_CONFIG --cflags fusion`
+   FUSION_LIBS=`$PKG_CONFIG --libs fusion`
+   AC_MSG_RESULT(found)
