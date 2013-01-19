@@ -1,12 +1,13 @@
 Summary:	FusionDale - applied Fusion, collection of services for applications
 Summary(pl.UTF-8):	FusionDale, czyli Fusion stosowany - zbiór usług dla aplikacji
 Name:		FusionDale
-Version:	1.6.2
+Version:	1.6.3
 Release:	1
 License:	LGPL v2+
 Group:		Libraries
 Source0:	http://www.directfb.org/downloads/Libs/%{name}-%{version}.tar.gz
-# Source0-md5:	96acdd9825cd8a9f20ebcc29047a3a33
+# Source0-md5:	e1b9993c16982a4ad44fb10716a8b70e
+Patch0:		%{name}-am.patch
 URL:		http://www.directfb.org/index.php?path=Platform/FusionDale
 BuildRequires:	DirectFB-devel >= 1:1.6.0
 BuildRequires:	autoconf >= 2.52
@@ -57,6 +58,7 @@ Statyczna biblioteka FusionDale.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %{__libtoolize}
