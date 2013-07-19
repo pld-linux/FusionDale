@@ -2,7 +2,7 @@ Summary:	FusionDale - applied Fusion, collection of services for applications
 Summary(pl.UTF-8):	FusionDale, czyli Fusion stosowany - zbiór usług dla aplikacji
 Name:		FusionDale
 Version:	1.6.3
-Release:	1
+Release:	2
 License:	LGPL v2+
 Group:		Libraries
 Source0:	http://www.directfb.org/downloads/Libs/%{name}-%{version}.tar.gz
